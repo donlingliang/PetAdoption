@@ -18,7 +18,7 @@ PetAdoption allows you to select one of the kitties in the list to adopt.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
+<img src="/results/screenshot_1.png" width="260" height="500">&emsp;<img src="/results/screenshot_2.png" width="260" height="500">
 
 ## License
 ```
