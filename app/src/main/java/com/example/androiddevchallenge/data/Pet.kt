@@ -2,7 +2,6 @@ package com.example.androiddevchallenge.data
 
 import android.os.Parcelable
 import androidx.annotation.DrawableRes
-import androidx.compose.runtime.R
 import kotlinx.parcelize.Parcelize
 
 @Parcelize

@@ -20,7 +20,14 @@ import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Card
@@ -57,7 +64,7 @@ class MainActivity : AppCompatActivity() {
 fun MyApp() {
     Surface(color = MaterialTheme.colors.primary) {
         LazyColumn(
-            Modifier.fillMaxWidth(),
+            modifier = Modifier.fillMaxWidth(),
             contentPadding = PaddingValues(16.dp, 16.dp),
             verticalArrangement = Arrangement.spacedBy(32.dp)
         ) {
@@ -95,7 +102,12 @@ fun PetItemCard(pet: Pet) {
                     .height(96.dp)
             )
             Column {
-                Text(text = pet.name, Modifier.padding(4.dp), fontSize = 16.sp, fontWeight = FontWeight.Black)
+                Text(
+                    text = pet.name,
+                    Modifier.padding(4.dp),
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Black
+                )
                 Row {
                     Text(text = pet.stage.toString(), Modifier.padding(4.dp))
                     Text(text = pet.gender.toString(), Modifier.padding(4.dp))
